@@ -103,3 +103,22 @@ add_action('upload_mimes', 'add_file_types_to_uploads', 1, 1);
 //disable update emails
 add_filter( 'auto_plugin_update_send_email', '__return_false' );
 add_filter( 'auto_theme_update_send_email', '__return_false' );
+
+
+
+/**
+ * EMIGMA CUSTOM 
+ */
+
+ if ( ! function_exists('lvar_dump') ) {
+     function lvar_dump(){
+     if($_SERVER['REMOTE_ADDR'] === '89.212.119.6' || true) {
+             $args = func_get_args();
+       foreach($args as $a) {
+         echo '<pre>';
+           array_map('var_dump', $args);
+         echo '</pre>';
+       }
+         }
+   }
+ }
