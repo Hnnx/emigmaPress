@@ -39,7 +39,7 @@ function boilerplate_shortcode( $argument ) {
 	</div>
 </div>
 
-	<?php lvar_dump( $argument ); ?>
+	<?php var_dumpl( $argument ); ?>
 
 
 	<?php

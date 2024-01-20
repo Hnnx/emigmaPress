@@ -6,9 +6,9 @@
  */
 
 ?>
-<article <?php post_class('main-content'); ?> id="post-<?php the_ID(); ?>">
+<article <?php post_class( 'main-content' ); ?> id="post-<?php the_ID(); ?>">
 
-    <div class="entry-content">
+	<div class="entry-content">
 
 		<?php the_content(); ?>
 

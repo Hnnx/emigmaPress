@@ -1,9 +1,7 @@
 <?xml version="1.0"?>
 <ruleset name="EmigmaPress">
-
-<!-- Example of excluing a sniff -->    
   <rule ref="WordPress">
-    <!-- <exclude name="Squiz.Commenting.FunctionComment.Missing"/> -->
+    <!-- <exclude name="Generic.PHP.DisallowShortOpenTag.EchoFound"/> -->
+    <exclude name="Squiz.ControlStructures.ControlSignature.NewlineAfterOpenBrace"/>
   </rule>
-
 </ruleset>
