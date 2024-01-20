@@ -1,7 +1,8 @@
 <?php
+
 /**
  * Template Name: Full Width
- * 
+ *
  *  Use this to break free from .containers
  *
  * @package EmigmaPress
@@ -19,7 +20,8 @@ get_header();
             <div class="container">
                 <div class="row">
                     <div class="col-8">
-                        <?php while ( have_posts() ) : the_post(); ?>
+                        <?php while (have_posts()) :
+                            the_post(); ?>
                             <?php the_content(); ?> 
                         <?php endwhile; // end of the loop. ?>
                     </div>

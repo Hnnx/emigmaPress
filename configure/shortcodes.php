@@ -31,6 +31,15 @@ function boilerplate_shortcode( $argument )
 
     ?>
 
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-lg-4 mx-auto">
+            <h2 class="text-primary">I SHould be blue</h2>
+        </div>
+    </div>
+</div>
+
     <?php lvar_dump($argument); ?>
 
 
