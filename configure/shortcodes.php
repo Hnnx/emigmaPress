@@ -46,3 +46,34 @@ function boilerplate_shortcode( $argument ) {
 	return ob_get_clean();
 }
 add_shortcode( 'boilerplate_shortcode', 'boilerplate_shortcode' );
+
+
+
+
+/**
+ * Simple SC
+ */
+function simple_sc() {
+
+	$args = array(
+		'post_type'      => 'post',
+		'posts_per_page' => 4,
+		'order'          => 'DESC',
+	);
+
+	$query = new WP_Query( $args );
+
+	ob_start();
+
+	if ( $query->have_posts() ) :
+		while ( $query->have_posts() ) : $query->the_post();
+			get_template_part( 'template-loop/content', 'post' );
+		endwhile;
+		wp_reset_postdata();
+	else :
+		echo 'No posts found';
+	endif;
+
+	return ob_get_clean();
+}
+add_shortcode( 'simple_sc', 'simple_sc' );
