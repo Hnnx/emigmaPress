@@ -1,30 +1,35 @@
 <?php
+/**
+ * Template Name: Front Page Template
+ *
+ * @package EmigmaPress
+ */
 
-// CPT TAXONOMY
+// CPT TAXONOMY.
 
 include( 'configure/cpt-taxonomy.php' );
 
-// Utilities
+// Utilities.
 
 include( 'configure/utilities.php' );
 
-// CONFIG
+// CONFIG.
 
 include( 'configure/configure.php' );
 
-// JAVASCRIPT & CSS
+// JAVASCRIPT & CSS.
 
 include( 'configure/js-css.php' );
 
-// SHORTCODES
+// SHORTCODES.
 
 include( 'configure/shortcodes.php' );
 
-// ACF
+// ACF.
 
 include( 'configure/acf.php' );
 
-// HOOKS ADMIN
+// HOOKS ADMIN.
 
 if(is_admin()) {
 	include( 'configure/admin.php' );
